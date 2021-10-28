@@ -1,0 +1,9 @@
+.header {
+display: flex;
+background-color: #000000;
+color: #F5783B; 
+height: 80px;
+}
+.headerText {
+    margin-left: 50px;
+}
