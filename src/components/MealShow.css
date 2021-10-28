@@ -1,0 +1,46 @@
+.app {
+	background-color: #000000;
+}
+.mealShowPage {
+	margin-top: 0px;
+	background-color: #000000;
+	color: white;
+	height: 100vh;
+}
+.mealShowContainer {
+	border: 3px solid #f5783b;
+	height: 500px;
+	width: 500px;
+	margin: 10% auto;
+}
+
+.mealImage {
+	width: 100%;
+	height: 100%;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.mealName {
+    text-align: center;
+    color:#f5783b;
+}
+.mealButtons {
+    width: 500px;
+    height:100px;
+    margin: 0px auto;
+    display: flex;
+    justify-content: space-around;
+    padding-top: 20px;
+}
+.mealBtn {
+    border-radius: 10px;
+    width: 30%;
+    height: 60%;
+    font-weight: bold;
+    background-color: #f5783b;
+    color: #ffffff;
+    font-size: larger;
+}
+.mealBtn:hover {
+    border: 5px solid #ffffff;
+}

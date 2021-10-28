@@ -3,6 +3,7 @@ display: flex;
 background-color: #000000;
 color: #F5783B; 
 height: 80px;
+border-bottom: #F5783B 2px solid;
 }
 .headerText {
     margin-left: 50px;
