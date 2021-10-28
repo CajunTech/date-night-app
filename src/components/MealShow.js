@@ -13,7 +13,7 @@ export default function MealShow(props) {
 			</div>
 			<div className='mealButtons'>
 				<button className="btn btn-primary mealBtn">Looks Good</button>
-				<button className="btn btn-primary mealBtn">Try Another?</button>
+				<button onClick={props.getRandomMeal} className="btn btn-primary mealBtn">Try Another?</button>
 			</div>
 		</div>
 	);
