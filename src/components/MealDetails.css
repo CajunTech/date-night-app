@@ -1,0 +1,21 @@
+.app {
+	background-color: #000000;
+}
+.mealDetailsPage {
+	margin-top: 0px;
+	background-color: #000000;
+	color: white;
+	height: 100vh;
+}
+.mealDetailsContainer {
+	border: 3px solid #f5783b;
+	height: 500px;
+	width: 500px;
+	margin: 2% auto;
+}
+.mealDetailsImage {
+	width: 100%;
+	height: 100%;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
