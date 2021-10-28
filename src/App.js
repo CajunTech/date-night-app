@@ -7,6 +7,7 @@ export default class App extends Component {
     super();
     this.state = {
       drink: {},
+      meal: {},
     };
   }
   // when the page renders, make the api call to get random drink
@@ -16,6 +17,15 @@ export default class App extends Component {
       .then((response) => {
       this.setState({drink: response.data.drinks[0]});
       });
+    
+    /*get a random meal json from mealdb and assign to meal state */
+		axios
+			.get('https://www.themealdb.com/api/json/v1/1/random.php')
+			.then((response) => {
+				this.setState({meal: response.data.meals[0]});
+			});
+	};
+
   }
 
   render() {
@@ -25,4 +35,5 @@ export default class App extends Component {
       </div>
     );
   }
+
 }
