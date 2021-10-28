@@ -1,6 +1,8 @@
 import React, { Component } from "react";
 import axios from "axios";
 import "./App.css";
+import DrinkShow from './components/DrinkShow'
+import { Route } from 'react-router-dom'
 
 export default class App extends Component {
   constructor() {
@@ -29,7 +31,16 @@ export default class App extends Component {
   render() {
     return (
       <div>
-        
+        <main>
+          <Route path="/drink"
+            render=
+            {routerProps =>
+              <DrinkShow
+                {...routerProps}
+              drink={this.state.drink} />            
+            } />
+          
+        </main>
       </div>
     );
   }
