@@ -15,21 +15,9 @@ export default class App extends Component {
     };
   }
 
-  // async componentDidMount() {
-  //   axios
-  //     // when the page renders, make the api call to get random drink
-  //     .get("https://www.thecocktaildb.com/api/json/v1/1/random.php")
-  //     .then((response) => {
-  //       this.setState({ drink: response.data.drinks[0] });
-  //     });
-    
-  // //   /*get a random meal json from mealdb and assign to meal state */
-  // // axios
-  // //     .get('https://www.thecocktaildb.com/api/json/v1/1/random.php')
-  // //     .then((response) => {
-  // //       this.setState({ drink: response.data.drinks[0] });
-  // //     });
-  // }
+  async componentDidMount() {
+    this.handleNextDrink()
+  }
 
   handleNextDrink = (e) => {
     e.preventDefault();
@@ -40,6 +28,9 @@ export default class App extends Component {
         this.setState({ drink: response.data.drinks[0] });
       });
   }
+
+
+
     render() {
       return (
         <div className="app">
