@@ -7,7 +7,7 @@ export default function DrinkShow(props) {
   return (
     <div className="drink-page">
       <div className="drink-container">
-        {/* <h1>Drink Show</h1> */}
+    
         <div className="drink-image">
                   <img src={drink.strDrinkThumb} alt="" />
                   
@@ -16,7 +16,14 @@ export default function DrinkShow(props) {
                   <h2>Name: {drink.strDrink}</h2>
                   <h3>Category: {drink.strCategory}</h3>
         </div>
-        
+              <div className="btnDivs">
+                  <div className="btnMakeDiv">
+                  <button class="btnMake">Make</button>
+                  </div>
+                  <div className="btnNextDiv">
+                  <button class="btnNext">Next</button>
+                  </div>
+        </div>
       </div>
     </div>
   );
