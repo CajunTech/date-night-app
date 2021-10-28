@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import axios from 'axios';
 import Header from './components/Header';
+import DrinkShow from './components/DrinkShow'
 import MealShow from './components/MealShow'
 import { Route } from 'react-router-dom';
 
@@ -16,14 +17,18 @@ export default class App extends Component {
 	}
 
 	componentDidMount() {
-		axios
-			// when the page renders, make the api call to get random drink
-			.get('https://www.thecocktaildb.com/api/json/v1/1/random.php')
-			.then((response) => {
-				this.setState({ drink: response.data.drinks[0] });
-			}).then(() => {this.getRandomMeal();})
+	this.handleNextDrink()
+  this.getRandomMeal()
 		}
 
+ handleNextDrink = (e) => {
+    axios
+      // when the page renders, make the api call to get random drink
+      .get("https://www.thecocktaildb.com/api/json/v1/1/random.php")
+      .then((response) => {
+        this.setState({ drink: response.data.drinks[0] });
+      });
+  }
 getRandomMeal = () => {
 		/*get a random meal json from mealdb and assign to meal state */
 		axios
@@ -43,7 +48,16 @@ getRandomMeal = () => {
 						<MealShow meal={this.state.meal} {...routerProps} getRandomMeal={this.getRandomMeal}/>
 					)}
 				/>
+ <Route path="/drink"
+              render=
+              {routerProps =>
+                <DrinkShow
+                  {...routerProps}
+                  drink={this.state.drink}
+                  handleNextDrink={this.handleNextDrink}/>
+              } />
 			</div>
 		);
 	}
 }
+
