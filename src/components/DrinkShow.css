@@ -1,0 +1,16 @@
+.drink-name{
+    color: #F5783B; 
+}
+.drink-cat{
+    color: #F5783B; 
+}
+.drink-container{
+    background-color: #000000;
+    width: 600px;
+}
+.drink-container h1{
+    color: #F5783B;    
+}
+.drink-image img{
+    width: 400px;
+}

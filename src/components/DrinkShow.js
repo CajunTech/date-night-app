@@ -1,4 +1,5 @@
 import React from "react";
+import './DrinkShow.css'
 
 export default function DrinkShow(props) {
   const drink = props.drink;
@@ -7,13 +8,13 @@ export default function DrinkShow(props) {
     <div className="drink-container">
       <h1>Drink Show</h1>
       <div className="drink-image">
-        <img src={drink.strDrinkThumb} />
+        <img src={drink.strDrinkThumb} alt="" />
       </div>
       <div className="drink-name">
-        <h2>{drink.strDrink}</h2>
+        <h2>Name: {drink.strDrink}</h2>
           </div>
           <div className="drink-cat">
-          <h3>{drink.strCategory}</h3>
+          <h3>Category: {drink.strCategory}</h3>
           </div>
       
     </div>
