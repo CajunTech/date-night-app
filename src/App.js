@@ -1,16 +1,24 @@
-import React, { Component } from 'react';
-import axios from 'axios';
+import React, { Component } from "react";
+import axios from "axios";
+import "./App.css";
 
 export default class App extends Component {
-	constructor() {
-		super();
-		this.state = {
-			meal: {},
-		};
-	}
-
-	componentDidMount = () => {
-		/*get a random meal json from mealdb and assign to meal state */
+  constructor() {
+    super();
+    this.state = {
+      drink: {},
+      meal: {},
+    };
+  }
+  // when the page renders, make the api call to get random drink
+  componentDidMount() {
+    axios
+      .get("https://www.thecocktaildb.com/api/json/v1/1/random.php")
+      .then((response) => {
+      this.setState({drink: response.data.drinks[0]});
+      });
+    
+    /*get a random meal json from mealdb and assign to meal state */
 		axios
 			.get('https://www.themealdb.com/api/json/v1/1/random.php')
 			.then((response) => {
@@ -18,10 +26,14 @@ export default class App extends Component {
 			});
 	};
 
-	render() {
-		return (
-			<div>
-			</div>
-		);
-	}
+  }
+
+  render() {
+    return (
+      <div>
+        
+      </div>
+    );
+  }
+
 }
