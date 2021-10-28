@@ -44,3 +44,12 @@
 .mealBtn:hover {
     border: 5px solid #ffffff;
 }
+.mealShowLinkDetail {
+    border-radius: 10px;
+    width: 30%;
+    height: 60%;
+    font-weight: bold;
+    background-color: #f5783b;
+    color: #ffffff;
+    font-size: larger;
+}
