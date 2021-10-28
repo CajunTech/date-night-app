@@ -1,0 +1,20 @@
+import React from 'react';
+import './MealShow.css';
+
+export default function MealShow(props) {
+	return (
+		<div className="mealShowPage">
+			<div className="mealShowContainer">
+				<div
+					className="mealImage"
+					style={{ backgroundImage: `url("${props.meal.strMealThumb}")` }}
+				></div>
+				<h1 className="mealName">{props.meal.strMeal}</h1>
+			</div>
+			<div className='mealButtons'>
+				<button className="btn btn-primary mealBtn">Looks Good</button>
+				<button className="btn btn-primary mealBtn">Try Another?</button>
+			</div>
+		</div>
+	);
+}
