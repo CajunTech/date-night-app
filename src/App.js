@@ -15,17 +15,27 @@ export default class App extends Component {
     };
   }
 
-  async componentDidMount() {
+  // async componentDidMount() {
+  //   axios
+  //     // when the page renders, make the api call to get random drink
+  //     .get("https://www.thecocktaildb.com/api/json/v1/1/random.php")
+  //     .then((response) => {
+  //       this.setState({ drink: response.data.drinks[0] });
+  //     });
+    
+  // //   /*get a random meal json from mealdb and assign to meal state */
+  // // axios
+  // //     .get('https://www.thecocktaildb.com/api/json/v1/1/random.php')
+  // //     .then((response) => {
+  // //       this.setState({ drink: response.data.drinks[0] });
+  // //     });
+  // }
+
+  handleNextDrink = (e) => {
+    e.preventDefault();
     axios
       // when the page renders, make the api call to get random drink
       .get("https://www.thecocktaildb.com/api/json/v1/1/random.php")
-      .then((response) => {
-        this.setState({ drink: response.data.drinks[0] });
-      });
-    
-    /*get a random meal json from mealdb and assign to meal state */
-  axios
-      .get('https://www.thecocktaildb.com/api/json/v1/1/random.php')
       .then((response) => {
         this.setState({ drink: response.data.drinks[0] });
       });
@@ -41,7 +51,8 @@ export default class App extends Component {
               {routerProps =>
                 <DrinkShow
                   {...routerProps}
-                  drink={this.state.drink} />
+                  drink={this.state.drink}
+                  handleNextDrink={this.handleNextDrink}/>
               } />
           
           </main>

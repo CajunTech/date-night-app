@@ -17,11 +17,11 @@ export default function DrinkShow(props) {
                   <h3>Category: {drink.strCategory}</h3>
         </div>
               <div className="btnDivs">
-                  <div className="btnMakeDiv">
+                  <div className="btnMakeDiv" >
                   <button class="btnMake">Make</button>
                   </div>
                   <div className="btnNextDiv">
-                  <button class="btnNext">Next</button>
+                  <button class="btnNext" onClick={props.handleNextDrink}>Next</button>
                   </div>
         </div>
       </div>
