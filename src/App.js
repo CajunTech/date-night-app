@@ -10,6 +10,7 @@ export default class App extends Component {
 	}
 
 	componentDidMount = () => {
+		/*get a random meal json from mealdb and assign to meal state */
 		axios
 			.get('https://www.themealdb.com/api/json/v1/1/random.php')
 			.then((response) => {
@@ -20,8 +21,6 @@ export default class App extends Component {
 	render() {
 		return (
 			<div>
-				<h1>Hello World</h1>
-				<h2>{this.state.meal.strMeal}</h2>
 			</div>
 		);
 	}
