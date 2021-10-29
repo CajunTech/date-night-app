@@ -73,3 +73,6 @@
 .btnMake:hover {
 	background-color:#f1580c;
 }
+.dd-steps p{
+font-style: italic;
+}

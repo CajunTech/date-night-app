@@ -63,7 +63,7 @@ export default class App extends Component {
           )}
         />
         <Route
-          path="/drink"
+          exact path="/drink"
           render={(routerProps) => (
             <DrinkShow
               {...routerProps}
