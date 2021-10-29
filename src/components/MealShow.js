@@ -14,13 +14,13 @@ export default function MealShow(props) {
 			<div className="mealButtons">
 				<button
 					onClick={() => props.history.push('/meal/detail')}
-					className="btn btn-primary mealBtn"
+					className="btn mealBtn"
 				>
 					Looks Good
 				</button>
 				<button
 					onClick={props.getRandomMeal}
-					className="btn btn-primary mealBtn"
+					className="btn mealBtn"
 				>
 					Try Another?
 				</button>
