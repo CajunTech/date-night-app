@@ -58,7 +58,7 @@ export default class App extends Component {
 					exact
 					path="/meal/detail"
 					render={(routerProps) => (
-						<MealDetails meal={this.state.meal} {...routerProps} />
+						<MealDetails meal={this.state.meal} {...routerProps}/>
 					)}
 				/>
 				<Route

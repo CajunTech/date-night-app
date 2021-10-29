@@ -7,9 +7,9 @@ export default function MealInstructions (props)  {
     let instructions = props.meal.strInstructions.split('\n');
     return (
         <div className="mealInstructions">
-            {instructions.map (instruction => {
+            {instructions.map ((instruction, i) => {
                 return (
-                    <p>{instruction}</p>
+                    <p key={i}>{instruction}</p>
                 )
             })}
 
