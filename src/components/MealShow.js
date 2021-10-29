@@ -2,6 +2,8 @@ import React from 'react';
 import './MealShow.css';
 
 export default function MealShow(props) {
+
+	
 	return (
 		<div className="mealShowPage">
 			<div className="mealShowContainer">
@@ -18,10 +20,7 @@ export default function MealShow(props) {
 				>
 					Looks Good
 				</button>
-				<button
-					onClick={props.getRandomMeal}
-					className="btn mealBtn"
-				>
+				<button onClick={props.getRandomMeal} className="btn mealBtn">
 					Try Another?
 				</button>
 			</div>
