@@ -1,35 +1,32 @@
 import React from 'react';
-import {Redirect} from 'react-router-dom'
 
 export default function MealIngredients(props) {
 	let ingArr = [];
 	let mealArr = [];
 	let measArr = [];
-    let filteredArr = [];
+	let filteredArr = [];
 
-	mealArr = Object.entries(props.meal)
-	console.log('meal', props.meal);
-
-    if (mealArr.length < 1) {
-        props.getRandomMeal
-    }
-
+	mealArr = Object.entries(props.meal);
+	//array indexes 9-28 are ingredients - finding all with actual values and pushing to a temp array
 	for (let i = 9; i <= 26; i++) {
-		if (mealArr[i][1] !== '') {
+		if (
+			mealArr[i][1] !== '' &&
+			mealArr[i][1] !== ' ' &&
+			mealArr[i][1] !== null &&
+			mealArr[i][1] !== undefined
+		) {
 			ingArr.push(mealArr[i][1]);
-			console.log(`ma${i}`, ingArr);
 		}
 	}
-
+	//array indexes 29-48 are measurements - finding all with actual values and pushing to a temp array
 	for (let i = 29; i <= 46; i++) {
 		if (mealArr[i][1] !== '') {
 			measArr.push(mealArr[i][1]);
-			console.log(`ms${i}`, measArr);
 		}
 	}
-    for (let i = 0; i < ingArr.length; i++) {
-			filteredArr.push(measArr[i] + ' ' + ingArr[i]);
-			console.log(`fa${i}`, filteredArr);
+	//combining values from both temp arrays into single array for mapping
+	for (let i = 0; i < ingArr.length; i++) {
+		filteredArr.push(measArr[i] + ' ' + ingArr[i]);
 	}
 	return (
 		<div>
@@ -39,4 +36,3 @@ export default function MealIngredients(props) {
 		</div>
 	);
 }
-<MealIngredients meal={props.meal} />
