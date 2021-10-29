@@ -48,7 +48,7 @@ export default function DrinkDetails(props) {
           style={{
             borderTop: "1px solid #f1580c ",
             marginLeft: 20,
-            marginRight: 20,
+            marginRight: 20,    
           }}
         ></div>
         <div className="make-container">
@@ -67,7 +67,7 @@ export default function DrinkDetails(props) {
             }}
           ></div>
           <div className="dd-steps">
-            <p>{drink.strInstructions}</p>
+            <p>{drink.strInstructions}</p><br></br><br></br>
           </div>
         </div>
       </div>
