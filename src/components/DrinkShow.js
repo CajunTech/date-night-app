@@ -7,22 +7,26 @@ export default function DrinkShow(props) {
   return (
     <div className="drink-page">
       <div className="drink-container">
-    
         <div className="drink-image">
-                  <img src={drink.strDrinkThumb} alt="" />
-                  
+          <img src={drink.strDrinkThumb} alt="" />
         </div>
         <div className="drink-name">
-                  <h2>Name: {drink.strDrink}</h2>
-                  <h3>Category: {drink.strCategory}</h3>
+          <h2>Name: {drink.strDrink}</h2>
+          <h3>Category: {drink.strCategory}</h3>
         </div>
-              <div className="btnDivs">
-                  <div className="btnMakeDiv" >
-                  <button class="btnMake">Make</button>
-                  </div>
-                  <div className="btnNextDiv">
-                  <button class="btnNext" onClick={props.handleNextDrink}>Next</button>
-                  </div>
+        <div className="btnDivs">
+          <div className="btnMakeDiv">
+            <button
+              className="btnMake"
+              onClick={() => props.history.push("/drink/detail")}>
+              Make
+            </button>
+          </div>
+          <div className="btnNextDiv">
+            <button class="btnNext" onClick={props.handleNextDrink}>
+              Next
+            </button>
+          </div>
         </div>
       </div>
     </div>
