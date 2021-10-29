@@ -5,7 +5,7 @@
     margin-top: 0px;
     background-color: #000000;
     color: white;
-    height: 100vh;
+    height: 100%;
 }
 .drink-name{
     color: #F5783B; 
@@ -18,10 +18,10 @@
 .drink-container{
     background-color: #000000;
     width: 500px;
-    height: 500px;
+    height: 100%;
     margin: 5% auto;
     text-align: center;
-    border:3px solid #F5783B
+    border:2px solid #F5783B
 }
 .drink-container h1{
     color: #F5783B;    
@@ -75,4 +75,17 @@
 }
 .dd-steps p{
 font-style: italic;
+}
+.dd-steps{
+    width: 95%;
+    height: 100%;
+    margin: 5px;
+}
+.make-container{
+    background-color: #000000;
+    width: 500px;
+    height: 100%;
+    margin: 5% auto;
+    text-align: center;
+    /* border:1px solid #F5783B */
 }
