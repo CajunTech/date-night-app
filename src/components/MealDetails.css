@@ -1,12 +1,11 @@
 .app {
 	background-color: #000000;
-    min-height: 100vh;
+	min-height: 100vh;
 }
 .mealDetailsPage {
 	margin-top: 0px;
 	background-color: #000000;
 	color: white;
-	
 }
 .mealDetailsContainer {
 	border: 3px solid #f5783b;
@@ -21,12 +20,12 @@
 	background-size: cover;
 }
 .mealInstructions {
-    margin: 0px auto;
-    width: 500px;
-    background-color: #000000;
+	margin: 0px auto;
+	width: 500px;
+	background-color: #000000;
 }
 hr {
-    height: 1px;
-        background-color: #f5783b;
-        border: none;
+	height: 1px;
+	background-color: #f5783b;
+	border: none;
 }
