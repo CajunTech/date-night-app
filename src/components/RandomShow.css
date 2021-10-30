@@ -13,7 +13,7 @@
 	display: flex;
 	justify-content: space-between;
 	flex-direction: row;
-
+}
 .nightContainer {
 	border: 3px solid #f5783b;
 	height: 300px;
