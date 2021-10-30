@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import axios from "axios";
+import Home from './components/Home'
 import Header from "./components/Header";
 import MealShow from "./components/MealShow";
 import MealDetails from "./components/MealDetails";
@@ -8,6 +9,7 @@ import DrinkDetails from "./components/DrinkDetails";
 import { Route } from "react-router-dom";
 
 import "./App.css";
+
 
 export default class App extends Component {
   constructor() {
@@ -44,6 +46,16 @@ export default class App extends Component {
     return (
       <div className="app">
         <Header />
+        <Route exact path="/"
+        render={(routerProps) => (
+          <Home
+            meal={this.state.meal}
+            {...routerProps}
+            getRandomMeal={this.getRandomMeal}
+            handleNextDrink={this.handleNextDrink}
+          />
+        )}        
+        />
         <Route
           exact
           path="/meal"
