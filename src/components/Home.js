@@ -7,7 +7,7 @@ export default function Home(props) {
       <div className="home_drink">
         <img
           className="drinkImg"
-          src="/images/liquor/liquor6.png"
+          src="/images/liquor/liquor2.png"
           alt="dna logo"
         />
 
@@ -30,7 +30,7 @@ export default function Home(props) {
           </div>
           
       <div className="home_meal">
-              <img className="mealImg" src="/images/dining/dining5.png" alt="meal" />
+              <img className="mealImg" src="/images/dining/dining6.png" alt="meal" />
               <button
           onClick={() => props.history.push("/meal")}
           className="btnNext"
