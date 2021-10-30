@@ -50,6 +50,7 @@ export default class App extends Component {
         render={(routerProps) => (
           <Home
             meal={this.state.meal}
+            drink={this.state.drink}
             {...routerProps}
             getRandomMeal={this.getRandomMeal}
             handleNextDrink={this.handleNextDrink}
