@@ -1,9 +1,10 @@
 import React from 'react';
 import './MealShow.css';
+import { Redirect } from 'react-router-dom';
 
 export default function MealShow(props) {
 
-	
+	if (Object.keys(props.meal).length > 0) {
 	return (
 		<div className="mealShowPage">
 			<div className="mealShowContainer">
@@ -26,4 +27,7 @@ export default function MealShow(props) {
 			</div>
 		</div>
 	);
+} else {
+	return <Redirect to={'/'} />;
+}
 }
