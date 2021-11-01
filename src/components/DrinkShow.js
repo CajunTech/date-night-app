@@ -24,7 +24,7 @@ export default function DrinkShow(props) {
             </button>
           </div>
           <div className="btnNextDiv">
-            <button class="btnNext" onClick={props.handleNextDrink}>
+            <button className="btnNext" onClick={props.handleNextDrink}>
               Next
             </button>
           </div>

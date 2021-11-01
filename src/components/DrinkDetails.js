@@ -42,9 +42,12 @@ export default function DrinkDetails(props) {
   // create new array to hold the combined ingredients
   const combined = [];
   for (let i = 0; i < ing.length; i++) {
+    if (i > meas.length-1) {
+      combined.push(ing[i][1])
+    } else {
     combined.push(meas[i][1] + " - " + ing[i][1]);
   }
- 
+}
   return (
     <div className="drink-page">
       <div className="drink-container">
@@ -64,8 +67,8 @@ export default function DrinkDetails(props) {
         <div className="make-container">
           {combined.map((combo, index) => {
             return (
-              <div className="dd-ing">
-                <p key={index}>{combo}</p>
+              <div key={index} className="dd-ing">
+                <p >{combo}</p>
               </div>
             );
           })}
