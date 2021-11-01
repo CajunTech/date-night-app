@@ -1,10 +1,14 @@
 .header {
-display: flex;
-background-color: #000000;
-color: #F5783B; 
-height: 80px;
-border-bottom: #F5783B 2px solid;
+	background-color: #000000;
+	border-bottom: #f5783b 2px solid;
+}
+.headerLink {
+	display: flex;
+	background-color: #000000;
+	color: #f5783b;
+	height: 80px;
+	text-decoration: none;
 }
 .headerText {
-    margin-left: 50px;
+	margin-left: 50px;
 }
