@@ -22,7 +22,7 @@ export default function Home(props) {
       <div className="home_combo">
               <img className="comboImg" src="/images/combo/combo5.png" alt="combo" />
               <button
-        //   onClick={() => props.history.push("/random")}
+          onClick={() => props.history.push("/night")}
           className="btnNext"
         >
           Both..
