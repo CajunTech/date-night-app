@@ -1,7 +1,9 @@
 import React from 'react';
 import './RandomShow.css';
+import { Redirect } from 'react-router-dom';
 
-function RandomShow(props) {
+export default function RandomShow(props) {
+	if (Object.keys(props.meal).length > 0 && Object.keys(props.drink).length > 0) {
 	const drink = props.drink;
 	const meal = props.meal;
 	return (
@@ -52,6 +54,8 @@ function RandomShow(props) {
      
 	</div>
 	);
+} else {
+	return <Redirect to={'/'} />;
+}
 }
 
-export default RandomShow;
