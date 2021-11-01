@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import axios from 'axios';
 import Header from './components/Header';
-import Home from './components/Home'
+import Home from './components/Home';
 import MealShow from './components/MealShow';
 import MealDetails from './components/MealDetails';
 import DrinkShow from './components/DrinkShow';
@@ -10,7 +10,6 @@ import RandomShow from './components/RandomShow';
 import { Route } from 'react-router-dom';
 
 import './App.css';
-
 
 export default class App extends Component {
 	constructor() {
@@ -21,10 +20,10 @@ export default class App extends Component {
 		};
 	}
 
-	componentDidMount() {
-		this.handleNextDrink();
-		this.getRandomMeal();
-	}
+	// componentDidMount() {
+	// 	this.handleNextDrink();
+	// 	this.getRandomMeal();
+	// }
 
 	randomAll = () => {
 		this.handleNextDrink();
@@ -48,21 +47,24 @@ export default class App extends Component {
 			});
 	};
 
+
 	render() {
 		return (
 			<div className="app">
-        <Header />
-        <Route exact path="/"
-        render={(routerProps) => (
-          <Home
-            meal={this.state.meal}
-            drink={this.state.drink}
-            {...routerProps}
-            getRandomMeal={this.getRandomMeal}
-            handleNextDrink={this.handleNextDrink}
-          />
-        )}        
-        />
+				<Header />
+				<Route
+					exact
+					path="/"
+					render={(routerProps) => (
+						<Home
+							meal={this.state.meal}
+							drink={this.state.drink}
+							{...routerProps}
+							getRandomMeal={this.getRandomMeal}
+							handleNextDrink={this.handleNextDrink}
+						/>
+					)}
+				/>
 				<Route
 					exact
 					path="/meal"

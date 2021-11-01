@@ -1,12 +1,17 @@
 import React from "react";
-
+import { Redirect } from 'react-router-dom';
 export default function DrinkDetails(props) {
   const drink = props.drink;
   // listing all the [key,value] pairs of [drink] object.
   const drinkArray = Object.entries(drink);
   // filter new array for string types
   const filteredDrinks = drinkArray.filter(
-    ([key, value]) => typeof value === "string"
+    ([key, value]) => (
+			value !== '' &&
+			value !== ' ' &&
+			value !== null &&
+			value !== undefined
+		)
   );
   // taking new array through filter looking for 'strIng'
   let ing = filteredDrinks.filter(function (obj) {
@@ -28,7 +33,16 @@ export default function DrinkDetails(props) {
         return obj;
       }
     }
-  });
+  })
+  if (drinkArray.length === 0) {
+    console.log('true DA', drinkArray)
+    console.log('true ing', ing)
+    console.log('true meas', meas)
+    return <Redirect to={'/'} />;
+  } else {
+    console.log ('false DA', drinkArray)
+    console.log('false ing', ing)
+    console.log('false meas', meas)
   // create new array to hold the combined ingredients
   const combined = [];
   for (let i = 0; i < ing.length; i++) {
@@ -73,4 +87,5 @@ export default function DrinkDetails(props) {
       </div>
     </div>
   );
+          }
 }
