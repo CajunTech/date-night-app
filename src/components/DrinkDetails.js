@@ -66,10 +66,10 @@ export default function DrinkDetails(props) {
           }}
         ></div>
         <div className="make-container">
-          {combined.map((combo) => {
+          {combined.map((combo, index) => {
             return (
               <div className="dd-ing">
-                <p>{combo}</p>
+                <p key={index}>{combo}</p>
               </div>
             );
           })}
