@@ -26,7 +26,7 @@ export default function MealIngredients(props) {
 	}
 	//combining values from both temp arrays into single array for mapping
 	for (let i = 0; i < ingArr.length; i++) {
-		filteredArr.push(measArr[i] + ' ' + ingArr[i]);
+		filteredArr.push(measArr[i] + ' - ' + ingArr[i]);
 	}
 	return (
 		<div>

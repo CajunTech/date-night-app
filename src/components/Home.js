@@ -1,8 +1,9 @@
 import React from 'react';
 import './Home.css';
-import { Link } from 'react-router-dom';
+import { Link} from 'react-router-dom';
 
 export default function Home(props) {
+
 
 	return (
 		<div className="home_container">
@@ -16,7 +17,7 @@ export default function Home(props) {
 					<button onClick={() => props.handleNextDrink()} className="btnNext">
 						Drink?
 					</button>
-				</Link>
+					</Link>
 			</div>
 
 			<div className="home_combo">
@@ -31,7 +32,7 @@ export default function Home(props) {
 			<div className="home_meal">
 				<img className="mealImg" src="/images/dining/dining6.png" alt="meal" />
 				<Link to="/meal">
-					<button onClick={() => props.getRandomMeal()} className="btnNext">
+					<button onClick={props.getRandomMeal()} className="btnNext">
 						Food?
 					</button>
 				</Link>

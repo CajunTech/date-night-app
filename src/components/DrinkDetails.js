@@ -34,9 +34,11 @@ export default function DrinkDetails(props) {
       }
     }
   })
-  if (drinkArray.length === 0) {
+  if (drinkArray.length === 0 || meas.length === 0 || ing.length === 0) {
     return <Redirect to={'/'} />;
   } else {
+    console.log(meas)
+    console.log(ing)
   // create new array to hold the combined ingredients
   const combined = [];
   for (let i = 0; i < ing.length; i++) {

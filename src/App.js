@@ -20,11 +20,6 @@ export default class App extends Component {
 		};
 	}
 
-	// componentDidMount() {
-	// 	this.handleNextDrink();
-	// 	this.getRandomMeal();
-	// }
-
 	randomAll = () => {
 		this.handleNextDrink();
 		this.getRandomMeal();
@@ -96,6 +91,7 @@ export default class App extends Component {
 							{...routerProps}
 							drink={this.state.drink}
 							handleNextDrink={this.handleNextDrink}
+							resetStates={this.resetStates}
 						/>
 					)}
 				/>
