@@ -49,14 +49,15 @@
 	color: #ffffff;
 	font-size: large;
 }
-.nightBtn:hover, .nightRandomBtn:hover {
+.nightBtn:hover,
+.nightRandomBtn:hover {
 	border: 5px solid #ffffff;
 }
 .nightRandomAll {
 	width: 800px;
-    display: flex;
+	display: flex;
 	justify-items: center;
-    margin: -20px auto;
+	margin: -20px auto;
 }
 .nightRandomBtn {
 	margin: 100px auto;

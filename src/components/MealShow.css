@@ -11,7 +11,7 @@
 	border: 3px solid #f5783b;
 	height: 500px;
 	width: 500px;
-	margin: 10% auto;
+	margin: 100px auto;
 }
 
 .mealImage {
@@ -21,26 +21,26 @@
 	background-size: cover;
 }
 .mealName {
-    text-align: center;
-    color:#f5783b;
+	text-align: center;
+	color: #f5783b;
 }
 .mealButtons {
-    width: 500px;
-    height:100px;
-    margin: 0px auto;
-    display: flex;
-    justify-content: space-around;
-    padding-top: 20px;
+	width: 500px;
+	height: 100px;
+	margin: 0px auto;
+	display: flex;
+	justify-content: space-around;
+	padding-top: 40px;
 }
 .mealBtn {
-    border-radius: 10px;
-    width: 30%;
-    height: 60%;
-    font-weight: bold;
-    background-color: #f5783b;
-    color: #ffffff;
-    font-size: larger;
+	border-radius: 10px;
+	width: 30%;
+	height: 60%;
+	font-weight: bold;
+	background-color: #f5783b;
+	color: #ffffff;
+	font-size: larger;
 }
 .mealBtn:hover {
-    border: 5px solid #ffffff;
+	border: 5px solid #ffffff;
 }

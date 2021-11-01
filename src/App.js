@@ -19,7 +19,9 @@ export default class App extends Component {
 			meal: {},
 		};
 	}
-
+	componentDidMount() {
+		this.randomAll();
+	}
 	randomAll = () => {
 		this.handleNextDrink();
 		this.getRandomMeal();
@@ -50,7 +52,7 @@ export default class App extends Component {
 	render() {
 		return (
 			<div className="app">
-				<Header resetStates={this.resetStates}/>
+				<Header resetStates={this.resetStates} />
 				<Route
 					exact
 					path="/"
