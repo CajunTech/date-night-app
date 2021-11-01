@@ -62,6 +62,7 @@ export default class App extends Component {
 							{...routerProps}
 							getRandomMeal={this.getRandomMeal}
 							handleNextDrink={this.handleNextDrink}
+							randomAll={this.randomAll}
 						/>
 					)}
 				/>
