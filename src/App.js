@@ -47,11 +47,15 @@ export default class App extends Component {
 			});
 	};
 
+	resetStates = () => {
+		this.setState({ meal: {} });
+		this.setState({ drink: {} });
+	};
 
 	render() {
 		return (
 			<div className="app">
-				<Header />
+				<Header resetStates={this.resetStates}/>
 				<Route
 					exact
 					path="/"
