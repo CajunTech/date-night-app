@@ -34,7 +34,6 @@ export default function DrinkDetails(props) {
   for (let i = 0; i < ing.length; i++) {
     combined.push(meas[i][1] + " - " + ing[i][1]);
   }
- 
   return (
     <div className="drink-page">
       <div className="drink-container">
