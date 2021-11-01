@@ -1,92 +1,70 @@
-.app{
-    background-color: #000000;
+.app {
+	background-color: #000000;
 }
-.drink-page{
-    margin-top: 0px;
-    background-color: #000000;
-    color: white;
-    height: 100%;
+.drink-page {
+	margin-top: 0px;
+	background-color: #000000;
+	color: white;
+	height: 100%;
 }
-.drink-name{
-    color: #F5783B; 
-    background-color: #000000;
+.drink-name {
+	color: #f5783b;
+	background-color: #000000;
 }
-/* .drink-cat{
-    color: #F5783B; 
-    background-color: #000000;
-} */
-.drink-container{
-    background-color: #000000;
-    width: 500px;
-    height: 100%;
-    margin: 5% auto;
-    text-align: center;
-    border:2px solid #F5783B
+.drink-container {
+	background-color: #000000;
+	width: 500px;
+	height: 100%;
+	margin: 5% auto;
+	text-align: center;
+	border: 2px solid #f5783b;
 }
-.drink-container h1{
-    color: #F5783B;    
+.drink-container h1 {
+	color: #f5783b;
 }
-.drink-image img{
-    width: 100%;
-    height: 100%;
-    background-repeat: no-repeat;
-    background-size: cover;
-    border:1px solid #F5783B
+.drink-image img {
+	width: 100%;
+	height: 100%;
+	background-repeat: no-repeat;
+	background-size: cover;
+	border: 1px solid #f5783b;
 }
-.btnDivs{
-    display: inline-flex;
-    
+.btnDivs {
+	width: 500px;
+	height: 100px;
+	margin: 0px auto;
+	display: flex;
+	justify-content: space-around;
+	padding-top: 20px;
 }
 
-.btnMake {
-	box-shadow: 0px 0px 0px 2px #F5793B;
-    margin-right: 40px;
-	background-color:#F5793B;
-	border-radius:10px;
-	border:1px solid #F5793B;
-	display:inline-block;
-	cursor:pointer;
-	color:#000000;
-	font-family:Arial;
-	font-size: 24px;
-	padding:10px 24px;
-	text-decoration:none;
-	/* text-shadow:0px 1px 0px #283966; */
-}
+.btnMake,
 .btnNext {
-	box-shadow: 0px 0px 0px 2px #F5793B;
-    margin-left: 40px;
-	background-color:#F5793B;
-	border-radius:10px;
-	border:1px solid #F5793B;
-	display:inline-block;
-	cursor:pointer;
-	color:#000000;
-	font-family:Arial;
-	font-size: 24px;
-	padding:10px 24px;
-	text-decoration:none;
-	/* text-shadow:0px 1px 0px #283966; */
+	border-radius: 10px;
+	width: 120px;
+	height: 60px;
+	font-weight: bold;
+	background-color: #f5783b;
+	color: #ffffff;
+	font-size: larger;
 }
-.btnNext:hover {
-	background-color:#f1580c;
-}
+.btnNext:hover,
 .btnMake:hover {
-	background-color:#f1580c;
+	border: 5px solid #ffffff;
 }
-.dd-steps p{
-font-style: italic;
+
+.dd-steps p {
+	font-style: italic;
 }
-.dd-steps{
-    width: 95%;
-    height: 100%;
-    margin: 5px;
+.dd-steps {
+	width: 95%;
+	height: 100%;
+	margin: 5px;
 }
-.make-container{
-    background-color: #000000;
-    width: 500px;
-    height: 100%;
-    margin: 5% auto;
-    text-align: center;
-    /* border:1px solid #F5783B */
+.make-container {
+	background-color: #000000;
+	width: 500px;
+	height: 100%;
+	margin: 5% auto;
+	text-align: center;
 }
