@@ -35,14 +35,8 @@ export default function DrinkDetails(props) {
     }
   })
   if (drinkArray.length === 0) {
-    console.log('true DA', drinkArray)
-    console.log('true ing', ing)
-    console.log('true meas', meas)
     return <Redirect to={'/'} />;
   } else {
-    console.log ('false DA', drinkArray)
-    console.log('false ing', ing)
-    console.log('false meas', meas)
   // create new array to hold the combined ingredients
   const combined = [];
   for (let i = 0; i < ing.length; i++) {

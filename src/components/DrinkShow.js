@@ -5,7 +5,6 @@ import { Redirect } from 'react-router-dom';
 export default function DrinkShow(props) {
   if (Object.keys(props.drink).length > 0) {
   const drink = props.drink;
-  console.log(drink);
   return (
     <div className="drink-page">
       <div className="drink-container">
