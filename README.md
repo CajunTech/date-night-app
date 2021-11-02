@@ -39,7 +39,7 @@ Random Choice example:<br>
 Favorite code snippet. This bit of filtering makes sure that there are no undesired results returned from object.
 ``` javascript
 
-const drink = props.drink;
+        const drink = props.drink;
 	// listing all the [key,value] pairs of [drink] object.
 	const drinkArray = Object.entries(drink);
 	// filter new array for valid data
