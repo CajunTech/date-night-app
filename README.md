@@ -39,18 +39,14 @@ Random Choice example:<br>
 Favorite code snippet. This bit of filtering makes sure that there are no undesired results returned from object.
 ```
 //
-mealArr = Object.entries(props.meal);
-	//array indexes 9-28 are ingredients - finding all with actual values and pushing to a temp array
-	for (let i = 9; i <= 26; i++) {
-		if (
-			mealArr[i][1] !== '' &&
-			mealArr[i][1] !== ' ' &&
-			mealArr[i][1] !== null &&
-			mealArr[i][1] !== undefined
-		) {
-			ingArr.push(mealArr[i][1]);
-		}
-	}
+const drink = props.drink;
+	// listing all the [key,value] pairs of [drink] object.
+	const drinkArray = Object.entries(drink);
+	// filter new array for valid data
+	const filteredDrinks = drinkArray.filter(
+		([key, value]) =>
+			value !== '' && value !== ' ' && value !== null && value !== undefined
+	);
 ```
 
 
